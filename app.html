@@ -1,0 +1,80 @@
+<!--Gurjit -->
+<html lang='en'>
+
+<head>
+    <title>My Dream Alarm Clock</title>
+    <meta charset='utf-8' name='viewport' content='width=device-width, initial=scale=1.0'>
+
+    <link rel="stylesheet" href="css/css.css">
+    
+    <style>
+        #subCategory {
+            display: none;
+        }
+
+        #health {
+            display: none;
+        }
+
+        #fun {
+            display: none;
+        }
+
+        #social {
+            display: none;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <div id="wrapper">
+
+
+        <!-- Header -->
+        <div class="header">
+            <div id="logo"> <img src="images/logo.png" alt="Logo" width="100" height="100"></div>
+            <h1 id="h1">My Apps</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbars">
+            <a href="index.html">Home</a>
+            <a href="app.html">Managing Apps</a>
+            <a href="cal.html">Calendar</a>
+            <a href="alarm.html">Alarm Clock</a>
+        </div>
+        <div id="box">
+            <h3>Select the Application category:</h3>
+        <select id="app" onchange="myFunction()">
+            <option value="">--select--</option>
+            <option value="1">health</option>
+            <option value="2">fun</option>
+            <option value="3">Social Media</option>
+        </select>
+            <br>
+        <div id="subCategory"><input type="text" id="asubcat" placeholder="Add Subcategory">
+            <input type="file" id="subcat" onchange="previewFile(event)"><br>
+            <img src="" id="previewsrc" height="200" alt="Image preview...">
+            <br /><button class="button" onclick="addSubCategory()">submit</button></div>
+        <div class="flex-container">
+            <div id="health">health</div>
+            <div id="fun">fun</div>
+            <div id="social">social</div>
+        </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            Copyright &copy; 2018
+        </footer>
+
+
+    </div>
+<script src="js/app.js" type="application/javascript"></script>
+</body>
+
+</html>
